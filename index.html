@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="lv" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,17 +30,19 @@
     </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Fira+Code:wght@400;500&display=swap');
-        
+
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #0f172a; /* Deep Dark Mode */
-            color: #e2e8f0; /* slate-200 */
+            background-color: #0f172a;
+            /* Deep Dark Mode */
+            color: #e2e8f0;
+            /* slate-200 */
         }
 
         .neon-glow {
             box-shadow: 0 0 15px rgba(34, 211, 238, 0.5), 0 0 30px rgba(34, 211, 238, 0.3);
         }
-        
+
         .neon-text {
             text-shadow: 0 0 8px rgba(34, 211, 238, 0.4);
         }
@@ -67,24 +70,32 @@
         }
 
         @keyframes blink {
-            50% { opacity: 0; }
+            50% {
+                opacity: 0;
+            }
         }
     </style>
 </head>
+
 <body class="min-h-screen flex flex-col antialiased selection:bg-cyan-400 selection:text-slate-900">
 
     <!-- Navbar -->
-    <nav class="fixed w-full z-50 transition-all duration-300 backdrop-blur-md bg-slate-800/50 border-b border-white/10">
+    <nav
+        class="fixed w-full z-50 transition-all duration-300 backdrop-blur-md bg-slate-800/50 border-b border-white/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <div class="flex-shrink-0 flex items-center gap-3">
                     <img class="h-10 w-auto rounded border border-cyan-400/30" src="media/logo.jpg" alt="Logo">
-                    <span class="font-bold text-xl tracking-tight text-white hidden sm:block">Atvērtā Koda Akadēmija</span>
+                    <span class="font-bold text-xl tracking-tight text-white hidden sm:block">Atvērtā Koda
+                        Akadēmija</span>
                 </div>
                 <div class="hidden md:flex space-x-8 items-center">
-                    <a href="index.html" class="text-white hover:text-cyan-400 transition-colors font-medium relative top-link">Sākums</a>
-                    <a href="produkti.html" class="text-slate-300 hover:text-cyan-400 transition-colors font-medium">Pakalpojumi</a>
-                    <a href="kontakti.html" class="text-slate-300 hover:text-cyan-400 transition-colors font-medium">Kontakti</a>
+                    <a href="index.html"
+                        class="text-white hover:text-cyan-400 transition-colors font-medium relative top-link">Sākums</a>
+                    <a href="produkti.html"
+                        class="text-slate-300 hover:text-cyan-400 transition-colors font-medium">Pakalpojumi</a>
+                    <a href="kontakti.html"
+                        class="text-slate-300 hover:text-cyan-400 transition-colors font-medium">Kontakti</a>
                 </div>
             </div>
         </div>
@@ -93,21 +104,32 @@
     <!-- Hero Section -->
     <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
         <!-- Background Gradient -->
-        <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
-            <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-cyan-400 to-[#0f172a] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+        <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+            aria-hidden="true">
+            <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-cyan-400 to-[#0f172a] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+                style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+            </div>
         </div>
-        
+
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative text-center">
-            <p class="text-cyan-400 font-mono tracking-wider mb-4 neon-text">Tava brīvība digitālajā pasaulē sākas šeit.</p>
+            <p class="text-cyan-400 font-mono tracking-wider mb-4 neon-text">Tava brīviba digitālajā pasaulē sākas šeit.
+            </p>
             <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-8">
-                Pārņem kontroli pār<br/>savu datoru ar <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500">Linux.</span>
+                Pārņem kontroli pār<br />savu datoru ar <span
+                    class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500">Linux.</span>
             </h1>
             <p class="mt-4 text-xl text-slate-300 max-w-3xl mx-auto font-light leading-relaxed mb-10">
                 Mēs nemācām tikai lietot programmas. Mēs mācām saprast sistēmu, cienīt privātumu un baudīt atvērto kodu.
             </p>
-            <a href="produkti.html" class="inline-flex items-center justify-center px-8 py-4 text-base font-medium rounded-md text-slate-900 bg-cyan-400 hover:bg-cyan-300 transition-all duration-300 neon-glow hover:scale-105 active:scale-95">
+            <a href="produkti.html"
+                class="inline-flex items-center justify-center px-8 py-4 text-base font-medium rounded-md text-slate-900 bg-cyan-400 hover:bg-cyan-300 transition-all duration-300 neon-glow hover:scale-105 active:scale-95">
                 Apskatīt kursus
-                <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                </svg>
             </a>
         </div>
     </section>
@@ -123,45 +145,51 @@
                     </h2>
                     <div class="prose prose-invert prose-lg text-slate-300">
                         <p class="mb-4">
-                            Esmu jūsu Linux meistars un Atvērtā Koda Akadēmijas dibinātājs. Mana misija ir pierādīt, ka operētājsistēma var būt ne tikai rīks, bet arī brīvības simbols.
+                            Esmu jūsu Linux meistars un Atvērtā Koda Akadēmijas dibinātājs. Mana misija ir pierādīt, ka
+                            operētājsistēma var būt ne tikai rīks, bet arī brīvibas simbols.
                         </p>
                         <p class="mb-4">
-                            Ar vairāk nekā 10 gadu pieredzi Debian un Ubuntu vidēs, es palīdzu studentiem pārvarēt bailes no termināļa un iemīlēt atvērto kodu.
+                            Ar vairāk nekā 10 gadu pieredzi Debian un Ubuntu vidēs, es palīdzu studentiem pārvarēt
+                            bailes no termināļa un iemīlēt atvērto kodu.
                         </p>
                         <p>
-                            Ja es neesmu terminālī, tad visticamāk meklēju jaunāko kodola atjauninājumu vai tīru savu katliņcepuri.
+                            Ja es neesmu terminālī, tad visticamāk meklēju jaunāko kodola atjauninājumu vai tīru savu
+                            katliņcepuri.
                         </p>
                     </div>
                 </div>
-                
+
                 <!-- Mentor Video & Quote Terminal Box -->
                 <div class="relative grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
-                    
+
                     <!-- Video Box -->
                     <div class="md:col-span-7 relative z-10">
-                        <div class="rounded-xl overflow-hidden neon-glow bg-black border border-cyan-400/50 relative group">
-                            <video 
-                                controls 
-                                playsinline
-                                poster="media/avatar.jpg"
+                        <div
+                            class="rounded-xl overflow-hidden neon-glow bg-black border border-cyan-400/50 relative group">
+                            <video controls playsinline poster="media/avatar.jpg"
                                 class="w-full aspect-video object-cover">
                                 <source src="media/mentor_loop.mp4" type="video/mp4">
                                 Jūsu pārlūks neatbalsta video atskaņošanu.
                             </video>
-                            <div class="absolute inset-0 border-2 border-transparent group-hover:border-cyan-400/50 transition-colors pointer-events-none rounded-xl"></div>
+                            <div
+                                class="absolute inset-0 border-2 border-transparent group-hover:border-cyan-400/50 transition-colors pointer-events-none rounded-xl">
+                            </div>
                         </div>
                     </div>
 
                     <!-- Terminal Quote Box -->
                     <div class="md:col-span-5 relative mt-8 md:mt-0 md:-ml-12 z-20">
-                        <div class="terminal-box bg-slate-900 rounded-lg p-6 border border-cyan-400 shadow-xl backdrop-blur-xl">
+                        <div
+                            class="terminal-box bg-slate-900 rounded-lg p-6 border border-cyan-400 shadow-xl backdrop-blur-xl">
                             <div class="flex gap-2 mb-4">
                                 <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
                                 <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
                                 <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
                             </div>
                             <p class="font-mono text-cyan-400 text-sm md:text-base leading-relaxed">
-                                "Digitālā brīvība nav dāvana – tā ir izvēle. Atvērtais kods dod tev atslēgas no tavas sistēmas. Sāc savu ceļu terminālī un kļūsti par sava datora saimnieku jau šodien."<span class="terminal-cursor"></span>
+                                "Digitālā brīviba nav dāvana – tā ir izvēle. Atvērtais kods dod tev atslēgas no tavas
+                                sistēmas. Sāc savu ceļu terminālī un kļūsti par sava datora saimnieku jau šodien."<span
+                                    class="terminal-cursor"></span>
                             </p>
                         </div>
                     </div>
@@ -177,4 +205,5 @@
     </footer>
 
 </body>
+
 </html>
