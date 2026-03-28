@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="lv" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atvērtā Koda Akadēmija | Pakalpojumi</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        slate: {
+                            800: '#1e293b',
+                            900: '#0f172a',
+                        },
+                        cyan: {
+                            400: '#22d3ee',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a;
+            color: #e2e8f0;
+        }
+
+        .neon-glow {
+            box-shadow: 0 0 15px rgba(34, 211, 238, 0.4);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .neon-glow:hover {
+            box-shadow: 0 0 25px rgba(34, 211, 238, 0.6);
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex flex-col antialiased selection:bg-cyan-400 selection:text-slate-900">
+
+    <!-- Navbar -->
+    <nav
+        class="fixed w-full z-50 transition-all duration-300 backdrop-blur-md bg-slate-800/50 border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <img class="h-10 w-auto rounded border border-cyan-400/30" src="media/logo.jpg" alt="Logo">
+                    <span class="font-bold text-xl tracking-tight text-white hidden sm:block">Atvērtā Koda
+                        Akadēmija</span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html"
+                        class="text-slate-300 hover:text-cyan-400 transition-colors font-medium">Sākums</a>
+                    <a href="produkti.html"
+                        class="text-white hover:text-cyan-400 transition-colors font-medium relative top-link">Pakalpojumi</a>
+                    <a href="kontakti.html"
+                        class="text-slate-300 hover:text-cyan-400 transition-colors font-medium">Kontakti</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="pt-32 pb-10 text-center relative overflow-hidden">
+        <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl opacity-30"
+            aria-hidden="true">
+            <div
+                class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-cyan-400 to-[#0f172a]">
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-5xl font-extrabold text-white tracking-tight mb-4">Mūsu mācību programmas</h1>
+            <p class="text-lg text-slate-300 max-w-2xl mx-auto font-light">
+                Izvēlies sev piemērotāko Linux distributīvu un sāc savu ceļu IT pasaulē. Visi kursi ilgst 3 mēnešus.
+            </p>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="py-12 flex-grow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <!-- Card 1: Linux Mint -->
+                <div
+                    class="group relative flex flex-col bg-slate-800/50 backdrop-blur-md rounded-2xl border border-white/10 overflow-hidden hover:-translate-y-2 transition-transform duration-300 hover:border-cyan-400/50">
+                    <div class="aspect-w-16 aspect-h-9 overflow-hidden">
+                        <img src="media/mint_kurss.png" alt="Linux Mint Course"
+                            class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">1.
+                            Linux Mint: Ideāls sākums</h3>
+                        <p class="text-slate-400 text-sm mb-4 flex-grow">
+                            Labākā izvēle tiem, kas pāriet no Windows. Stabils, saprotams un vizuāli pievilcīgs.
+                            Iemācies sistēmas pamatus bez stresa.
+                        </p>
+                        <div class="space-y-2 border-t border-slate-700/50 pt-4 mt-auto">
+                            <div class="flex justify-between items-center text-sm">
+                                <span class="text-slate-300">Ilgums:</span>
+                                <span class="font-mono text-cyan-400 font-semibold">3 mēneši</span>
+                            </div>
+                            <div class="flex justify-between items-center text-sm">
+                                <span class="text-slate-300">Cena:</span>
+                                <span class="font-mono text-white font-bold text-lg">450€ <span
+                                        class="text-xs font-normal text-slate-400">+ PVN</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6">
+                        <button
+                            class="w-full py-2 bg-slate-700/50 hover:bg-cyan-400 hover:text-slate-900 border border-transparent hover:border-cyan-400 text-white rounded transition-all font-medium">
+                            Pieteikties
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 2: Ubuntu -->
+                <div
+                    class="group relative flex flex-col bg-slate-800/50 backdrop-blur-md rounded-2xl border border-white/10 overflow-hidden hover:-translate-y-2 transition-transform duration-300 hover:border-cyan-400/50">
+                    <div class="aspect-w-16 aspect-h-9 overflow-hidden">
+                        <img src="media/ubuntu_kurss.png" alt="Ubuntu Course"
+                            class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">2.
+                            Ubuntu: Standarts un jauda</h3>
+                        <p class="text-slate-400 text-sm mb-4 flex-grow">
+                            Vispopulārākais Linux pasaulē. Lieliski piemērots gan darbam, gan izklaidei. Apgūsti plašāko
+                            kopienu un modernāko programmatūru.
+                        </p>
+                        <div class="space-y-2 border-t border-slate-700/50 pt-4 mt-auto">
+                            <div class="flex justify-between items-center text-sm">
+                                <span class="text-slate-300">Ilgums:</span>
+                                <span class="font-mono text-cyan-400 font-semibold">3 mēneši</span>
+                            </div>
+                            <div class="flex justify-between items-center text-sm">
+                                <span class="text-slate-300">Cena:</span>
+                                <span class="font-mono text-white font-bold text-lg">450€ <span
+                                        class="text-xs font-normal text-slate-400">+ PVN</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6">
+                        <button
+                            class="w-full py-2 bg-slate-700/50 hover:bg-cyan-400 hover:text-slate-900 border border-transparent hover:border-cyan-400 text-white rounded transition-all font-medium">
+                            Pieteikties
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 3: Manjaro -->
+                <div
+                    class="group relative flex flex-col bg-slate-800/50 backdrop-blur-md rounded-2xl border border-white/10 overflow-hidden hover:-translate-y-2 transition-transform duration-300 hover:border-cyan-400/50">
+                    <div class="aspect-w-16 aspect-h-9 overflow-hidden">
+                        <img src="media/manjaro_kurss.jpg" alt="Manjaro Course"
+                            class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">3.
+                            Manjaro: Ātrums un jaunumi</h3>
+                        <p class="text-slate-400 text-sm mb-4 flex-grow">
+                            Arch bāzēta sistēma, kas vienmēr piedāvā jaunākās programmu versijas. Dinamiskiem
+                            lietotājiem, kuri vēlas būt tehnoloģiju priekšgalā.
+                        </p>
+                        <div class="space-y-2 border-t border-slate-700/50 pt-4 mt-auto">
+                            <div class="flex justify-between items-center text-sm">
+                                <span class="text-slate-300">Ilgums:</span>
+                                <span class="font-mono text-cyan-400 font-semibold">3 mēneši</span>
+                            </div>
+                            <div class="flex justify-between items-center text-sm">
+                                <span class="text-slate-300">Cena:</span>
+                                <span class="font-mono text-white font-bold text-lg">450€ <span
+                                        class="text-xs font-normal text-slate-400">+ PVN</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6">
+                        <button
+                            class="w-full py-2 bg-slate-700/50 hover:bg-cyan-400 hover:text-slate-900 border border-transparent hover:border-cyan-400 text-white rounded transition-all font-medium">
+                            Pieteikties
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 4: Debian -->
+                <div
+                    class="group relative flex flex-col bg-slate-800/50 backdrop-blur-md rounded-2xl border border-white/10 overflow-hidden hover:-translate-y-2 transition-transform duration-300 hover:border-cyan-400/50">
+                    <div class="aspect-w-16 aspect-h-9 overflow-hidden">
+                        <img src="media/debian_kurss.png" alt="Debian Course"
+                            class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">4.
+                            Debian: Stabilitāte</h3>
+                        <p class="text-slate-400 text-sm mb-4 flex-grow">
+                            Sistēma profesionāļiem. Uzzini, kā darbojas Linux sirds, un iemācies konfigurēt servera
+                            līmeņa drošību un stabilitāti.
+                        </p>
+                        <div class="space-y-2 border-t border-slate-700/50 pt-4 mt-auto">
+                            <div class="flex justify-between items-center text-sm">
+                                <span class="text-slate-300">Ilgums:</span>
+                                <span class="font-mono text-cyan-400 font-semibold">3 mēneši</span>
+                            </div>
+                            <div class="flex justify-between items-center text-sm">
+                                <span class="text-slate-300">Cena:</span>
+                                <span class="font-mono text-white font-bold text-lg">450€ <span
+                                        class="text-xs font-normal text-slate-400">+ PVN</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6">
+                        <button
+                            class="w-full py-2 bg-slate-700/50 hover:bg-cyan-400 hover:text-slate-900 border border-transparent hover:border-cyan-400 text-white rounded transition-all font-medium">
+                            Pieteikties
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Minimal -->
+    <footer class="mt-auto py-8 border-t border-white/10 text-center text-slate-500 text-sm bg-slate-900">
+        <p>&copy; 2026 Atvērtā Koda Akadēmija. Visas tiesības aizsargātas.</p>
+    </footer>
+
+</body>
+
+</html>

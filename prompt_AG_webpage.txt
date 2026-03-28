@@ -1,0 +1,35 @@
+"Build a professional 3-page website for 'Atvērtā Koda Akadēmija' using HTML5 and Tailwind CSS. Use Latvian for all text, sourced from my saturs.txt.
+
+1. Assets & Media (From /media folder):
+
+Logo: Use media/logo.png.
+
+Home Page (index.html): In the 'Par mani' section, embed media/mentor_loop.mp4. Settings: autoplay, muted, loop, playsinline. Place the long 'Mentora citāts' from saturs.txt in a stylish dark box next to it.
+
+Products Page (produkti.html): Create 4 cards with these exact images:
+
+Linux Mint: media/mint_kurss.jpg
+
+Ubuntu: media/ubuntu_kurss.jpg
+
+Manjaro: media/manjaro_kurss.jpg
+
+Debian: media/debian_kurss.jpg
+
+Each card must show: Cena: 450€ + PVN and Ilgums: 3 mēneši.
+
+2. Visual Style ('VOW' effect):
+
+Theme: Deep Dark Mode (Background: #0f172a, Text: slate-200).
+
+Accents: High-contrast Cyan (#22d3ee) for buttons and hover effects.
+
+UI Elements: Use backdrop-blur-md and bg-slate-800/50 for navigation and cards (glassmorphism). Ensure the design is fully responsive.
+
+3. Deployment & Structure:
+
+Create index.html, produkti.html, and kontakti.html.
+
+All navigation links must work.
+
+Final Step: Push all files to my GitHub repository 'Slisansn/OSA_webpage'. I will provide my Fine-grained Personal Access Token when prompted. Ensure it's configured for GitHub Pages."
